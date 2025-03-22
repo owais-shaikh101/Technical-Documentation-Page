@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <main id="main-doc">
+      <div class="navbar">
+        <nav id="navbar">
+        <header>
+          JS Documentation
+        </header>
+        <a href="#Introduction" class="nav-link">
+          Introduction
+        </a>
+        <a href="#What_you_should_already_know" class="nav-link">
+          What you should already know
+          </a>
+          <a href="#Javascript_and_Java" class="nav-link">
+            Javascript and Java
+          </a>
+            <a href="#Variables" class="nav-link">
+              Variables
+            </a>
+              <a href="#Data_Types" class="nav-link">
+                Data Types
+              </a>
+              </nav>
+      </div>
+        <div class="sections">
+        <section class="main-section" id="Introduction">
+        <header>
+          Introduction
+        </header>
+        <p>
+          JavaScript is a versatile and widely used programming language primarily designed for creating interactive and dynamic content on websites. It runs on the client side (in the user's browser) and can also be executed on the server side with the help of environments like Node.js. JavaScript is an essential tool for web developers, enabling features such as form validation, animations, and responsive design, making websites more engaging and functional.
+        </p>
+        <p>
+          As a high-level, interpreted language, JavaScript is relatively easy to learn for beginners while offering powerful capabilities for experienced developers. It supports object-oriented, imperative, and functional programming styles, making it adaptable to various coding approaches. With the rise of modern frameworks like React, Angular, and Vue.js, JavaScript has become even more integral to building complex, single-page applications, revolutionizing the way websites and web apps are developed.
+        </p>
+        <p class="example">Here is an example:</p>
+        <div class="code">
+          <code>
+          function changeText() {<br>
+            document.getElementById("demo").innerHTML = "Hello, JavaScript is working!";<br>
+        }<br>
+        document.getElementById("button").onclick = changeText;
+        </code>
+        </div>
+        <ul>
+          <li>
+            The JavaScript code defines a function changeText that updates the content of an element with the ID "demo" to "Hello, JavaScript is working!" using document.getElementById().
+          </li>
+          <li>
+            It then assigns the changeText function to the onclick event of an element with the ID "button", so the text changes when the button is clicked. This shows how JavaScript can interact with HTML elements.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>
+          What you should already know
+        </header>
+        <p>
+          Before diving into JavaScript, you should have a basic understanding of HTML and CSS. HTML provides the structure for web pages, and CSS allows you to style those pages. Knowing how to create and style elements on a webpage will help you see how JavaScript interacts with those elements, such as modifying content or applying dynamic styles.
+        </p>
+        <p>
+          Additionally, it’s useful to have a foundational understanding of programming concepts like variables, data types, functions, and control structures (like loops and conditionals). These concepts are common in many programming languages and will make learning JavaScript more approachable, as JavaScript builds on these basics to perform tasks on web pages.
+        </p>
+        <p class="example">Here is an example:</p>
+        <div class="code">
+          <code>
+          document.getElementById('changeColorButton').onclick = function() {<br>
+            document.body.style.backgroundColor = 'lightblue';<br>
+        }
+        </code>
+        </div>
+        <ul>
+          <li>
+            <b>Accessing HTML Elements:</b> The document.getElementById('changeColorButton') fetches the button element by its ID, allowing you to interact with it.
+          </li>
+          <li>
+            <b>Event Handling:</b> The onclick event listener triggers a function that changes the background color of the page to light blue when the button is clicked.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Javascript_and_Java">
+        <header>
+          Javascript and Java
+        </header>
+        <p>
+          JavaScript and Java might sound similar, but they are fundamentally different languages. JavaScript is primarily used for web development to make websites interactive and dynamic, working directly in web browsers. It is an interpreted, lightweight, and event-driven language, ideal for handling user interactions, animations, and data manipulation on the client side.
+        </p>
+        <p>
+          Java, on the other hand, is a general-purpose, object-oriented programming language used to build cross-platform applications. Java is typically used for backend development, mobile apps (Android), and large enterprise applications. Unlike JavaScript, Java needs to be compiled into bytecode and runs on the Java Virtual Machine (JVM), allowing it to work across different operating systems.
+        </p>
+        <p class="example">Here is an example of a Java Code (Console-Based):</p>
+        <div class="code">
+          <code>
+          public class MyProgram {<br>
+            public static void main(String[] args) {<br>
+                System.out.println("My Java Program.");<br>
+          }<br>
+        }
+        </code>
+        </div>
+        <p class="example">Here is an example of a JavaScript Code (Web-Based):</p>
+        <div class="code">
+          <code>
+          alert("My JavaScript Program.");
+        </code>
+        </div>
+        <ul>
+          <li>
+            <b>Execution Environment:</b> Java runs on the server or as a standalone application, requiring compilation, while JavaScript runs in the browser and is interpreted directly, making it more suited for web development.
+          </li>
+          <li>
+            <b>Output Mechanism:</b> In Java, the output is printed to the console using System.out.println(), whereas in JavaScript, the output is shown as an alert in the browser using the alert() function.
+          </li>
+        </ul>
+        </section>
+      <section class="main-section" id="Variables">
+        <header>
+          Variables
+        </header>
+        <p>
+          In JavaScript, a variable is used to store data that can be referenced and manipulated throughout the code. You can declare variables using three keywords: var, let, and const. The let keyword is commonly used for variables that can be reassigned, while const is used for values that should remain constant. var is the oldest keyword and is less commonly used in modern JavaScript due to its function-scoped behavior, while let and const are block-scoped.
+        </p>
+        <p>
+          JavaScript is dynamically typed, meaning the type of a variable is determined at runtime based on the assigned value, rather than being explicitly declared. This gives flexibility but requires careful attention to ensure the correct data type is used when performing operations on variables.
+        </p>
+        <p class="example">Here is an example:</p>
+        <div class="code">
+          <code>
+          let age = 25; // Declare a variable with 'let' that can be reassigned<br>
+          const name = "John"; // Declare a constant variable that cannot be reassigned<br>
+          console.log(name + " is " + age + " years old."); // Output the values
+        </code>
+        </div>
+        <ul>
+          <li>
+            <b>Variable Declaration:</b> let is used to declare age because it can be reassigned later, and const is used for name because its value should not change.
+          </li>
+          <li>
+            <b>Output:</b> The console.log() function is used to combine the name and age variables into a string and print it to the console, demonstrating how variables store and use data.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>
+          Data Types
+        </header>
+        <p>
+          JavaScript has several data types that are essential for handling different kinds of values. The primitive types include Number, String, Boolean, Null, Undefined, and Symbol. These are the most basic types, and they represent simple values that are immutable. For instance, Numbers represent numeric values, and Strings represent sequences of characters. Boolean values can either be true or false, while Null and Undefined represent the absence of a value or an uninitialized variable.
+        </p>
+        <p>
+          In addition to the primitive types, JavaScript has Objects, which are used to store collections of key-value pairs. Arrays are a special type of object that stores ordered collections. JavaScript is a dynamically-typed language, meaning that variables do not require explicit data types and can change types during runtime. This flexibility makes it easier to work with data in various forms without strict constraints.
+        </p>
+        <p class="example">Here is an example:</p>
+        <div class="code">
+          <code>
+          let number = 42;               // Number data type<br>
+          let text = "Hello, World!";    // String data type<br>
+          let isActive = true;           // Boolean data type<br>
+          let user = { name: "John", age: 30 };  // Object data type<br>
+          console.log(number, text, isActive, user);
+        </code>
+        </div>
+        <ul>
+          <li>
+            The code declares variables of different data types (Number, String, Boolean, and Object) and logs their values to the console.
+          </li>
+          <li>
+            It demonstrates how JavaScript can handle various data types dynamically and display them together.
+          </li>
+        </ul>
+      </section>
+      </div>
+    </main>
+</body>
+</html>
